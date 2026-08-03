@@ -1,5 +1,17 @@
-@import "tailwindcs";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-brand-600: #fefefessss
+    --color-brand-600: #2563eb;
+    --color-ink: #000000;
+    --font-display: "Manrope", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --radius-card: 0.875rem;
+}
+
+@layer components {
+    .section {
+        @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
+    }
 }
